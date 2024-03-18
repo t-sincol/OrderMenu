@@ -1,0 +1,284 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+　　<meta http-equiv="Cache-Control" content="no-cache">
+　　<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>発注書</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+</head>
+
+<script>
+function GetQueryString() {
+            if (1 < document.location.search.length) {
+                var query = document.location.search.substring(1);
+                return query;
+            }
+            return null;
+        }
+
+</script>
+
+<body>
+
+    <form class="w-75 mx-auto">
+        <p class="mt-3">得意先名</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="name" placeholder="" required>
+        </div>
+        <p class="mt-3">現場名</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="genba">
+        </div>
+        <p class="mt-3">届け先名</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="todokeName">
+        </div>
+        <p class="mt-3">届け先住所</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="jyuusyo">
+        </div>
+        <p class="mt-3">納期</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="nouki">
+        </div>
+	
+<script type="text/javascript">
+var ss=GetQueryString();
+//document.write(ss);
+
+if(ss == 1){
+	document.write('<table>');
+	document.write('<tr>');
+        document.write('<th><class="mt-3">商品名</th> <th><class="mt-3">数量・単位</th>');
+	document.write('</tr>');
+	document.write('<tr>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="syouhin1" required></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="suuryo1" required></div></td>');
+	document.write('</tr>');
+	document.write('<tr>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="syouhin2"></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="suuryo2"></div></td>');
+	document.write('</tr>');
+	document.write('<tr>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="syouhin3"></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="suuryo3"></div></td>');
+	document.write('</tr>');
+	document.write('<tr>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="syouhin4"></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="suuryo4"></div></td>');
+	document.write('</tr>');
+	document.write('<tr>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="syouhin5"></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="suuryo5"></div></td>');
+	document.write('</tr>');
+	document.write('</table>');
+} else {
+	document.write('<table>');
+	document.write('<tr>');
+        document.write('<th><class="mt-3">カーペット名</th> <th><class="mt-3">幅cm</th>　<th><class="mt-3">長さcm</th> <th><class="mt-3">本</th>');
+	document.write('</tr>');
+	document.write('<tr>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="syouhin1" required></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="haba1" required></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="naga1" required></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="honn1" required></div></td>');
+	document.write('</tr>');
+	document.write('<tr>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="syouhin2"></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="haba2"></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="naga2"></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="honn2"></div></td>');
+	document.write('</tr>');
+	document.write('<tr>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="syouhin3"></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="haba3"></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="naga3"></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="honn3"></div></td>');
+	document.write('</tr>');
+	document.write('<tr>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="syouhin4"></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="haba4"></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="naga4"></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="honn4"></div></td>');
+	document.write('</tr>');
+	document.write('<tr>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="syouhin5"></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="haba5"></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="naga5"></div></td>');
+        document.write('<td><div><input class="form-control w-100 mt-1" name="honn5"></div></td>');
+	document.write('</tr>');
+	document.write('</table>');
+}
+</script>
+
+        <p class="mt-3">備考</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="bikou">
+        </div>
+        <p class="mt-3">配達指示</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="haitatu">
+        </div>
+
+        <input type="submit" class="mt-4 btn btn-primary" value="送信">
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            const liffId = "2004161222-jbgmkLVl";
+            initializeLiff(liffId);
+        })
+
+        function initializeLiff(liffId) {
+            liff.init({
+                liffId: liffId
+            }).then(() => {
+                initializeApp();
+            }).catch((err) => {
+                console.log('LIFF Initialization failed ', err);
+            });
+        }
+
+	function sendText(text) {
+            liff.sendMessages([{
+                'type': 'text',
+                'text': text
+            }]).then(function () {
+                liff.closeWindow();
+            }).catch(function (error) {
+                window.alert('Failed to send message ' + error);
+            });
+        }
+
+        const params = (new URL(document.location)).searchParams;
+        const key = params.get('key');
+
+        $(function () {
+            $('form').submit(function () {
+
+		if(ss == 1){
+	            const name    = $('input[name="name"]').val();
+        	    const genba = $('input[name="genba"]').val();
+        	    const jyuusyo  = $('input[name="jyuusyo"]').val();
+           	    const todokeName  = $('input[name="todokeName"]').val();
+                    const nouki  = $('input[name="nouki"]').val();
+                    const syouhin1  = $('input[name="syouhin1"]').val();
+                    const suuryo1 = $('input[name="suuryo1"]').val();
+                    var msg = `得意先名：${name}\n現場名：${genba}\n届け先名：${todokeName}\n届け先住所：${jyuusyo}\n納期：${nouki}\n商品名1：${syouhin1}　数量：${suuryo1}`;
+
+                    const syouhin2  = $('input[name="syouhin2"]').val();
+                    const suuryo2 = $('input[name="suuryo2"]').val();
+
+    		    if ( syouhin2 !== null && syouhin2 !== undefined && syouhin2 !== "" ) {
+	                msg = msg + `\n商品名2：${syouhin2}　数量：${suuryo2}`;
+		    }
+
+                    const syouhin3  = $('input[name="syouhin3"]').val();
+                    const suuryo3 = $('input[name="suuryo3"]').val();
+
+		    if ( syouhin3 !== null && syouhin3 !== undefined && syouhin3 !== "" ) { 
+	                msg = msg + `\n商品名3：${syouhin3}　数量：${suuryo3}`;
+		    }
+
+                    const syouhin4  = $('input[name="syouhin4"]').val();
+                    const suuryo4 = $('input[name="suuryo4"]').val();
+
+		    if ( syouhin4 !== null && syouhin4 !== undefined && syouhin4 !== "" ) {
+	                msg = msg + `\n商品名4：${syouhin4}　数量：${suuryo4}`;
+		    }
+
+                    const syouhin5  = $('input[name="syouhin5"]').val();
+                    const suuryo5 = $('input[name="suuryo5"]').val();
+
+		    if ( syouhin5 !== null && syouhin5 !== undefined && syouhin5 !== "" ) {
+	                msg = msg + `\n商品名5：${syouhin5}　数量：${suuryo5}`;
+		    }
+
+		    const bikou  = $('input[name="bikou"]').val();
+		    if ( bikou !== null && bikou !== undefined && bikou !== "" ) {
+	                msg = msg + `\n備考：${bikou}`;
+		    }
+                    const haitatu = $('input[name="haitatu"]').val();
+		    if ( haitatu !== null && haitatu !== undefined && haitatu !== "" ) {
+	                msg = msg + `\n備考：${haitatu}`;
+		    }
+		} else {
+	            const name    = $('input[name="name"]').val();
+        	    const genba = $('input[name="genba"]').val();
+        	    const jyuusyo  = $('input[name="jyuusyo"]').val();
+           	    const todokeName  = $('input[name="todokeName"]').val();
+                    const nouki  = $('input[name="nouki"]').val();
+                    const syouhin1  = $('input[name="syouhin1"]').val();
+                    const haba1 = $('input[name="haba1"]').val();
+                    const naga1 = $('input[name="naga1"]').val();
+                    const honn1 = $('input[name="honn1"]').val();
+//		    suuryo1 = haba1 * naga1 / 10000
+                    var msg = `得意先名：${name}\n現場名：${genba}\n届け先名：${todokeName}\n届け先住所：${jyuusyo}\n納期：${nouki}\n商品名1：${syouhin1}　幅${haba1}cm × 長さ${naga1}cm × ${honn1}本`;
+
+                    const syouhin2  = $('input[name="syouhin2"]').val();
+                    const haba2 = $('input[name="haba2"]').val();
+                    const naga2 = $('input[name="naga2"]').val();
+                    const honn2 = $('input[name="honn2"]').val();
+//		    suuryo2 = haba2 * naga2 / 10000
+
+    		    if ( syouhin2 !== null && syouhin2 !== undefined && syouhin2 !== "" ) {
+	                msg = msg + `\n商品名2：${syouhin2}　幅${haba2}cm × 長さ${naga2}cm × ${honn2}本`;
+		    }
+
+                    const syouhin3  = $('input[name="syouhin3"]').val();
+                    const haba3 = $('input[name="haba3"]').val();
+                    const naga3 = $('input[name="naga3"]').val();
+                    const honn3 = $('input[name="honn3"]').val();
+		    suuryo3 = haba3 * naga3 / 10000
+
+		    if ( syouhin3 !== null && syouhin3 !== undefined && syouhin3 !== "" ) { 
+	                msg = msg + `\n商品名3：${syouhin3}　幅${haba3}cm × 長さ${naga3}cm × ${honn3}本`;
+		    }
+
+                    const syouhin4  = $('input[name="syouhin4"]').val();
+                    const haba4 = $('input[name="haba4"]').val();
+                    const naga4 = $('input[name="naga4"]').val();
+                    const honn4 = $('input[name="honn4"]').val();
+		    suuryo4 = haba4 * naga4 / 10000
+
+		    if ( syouhin4 !== null && syouhin4 !== undefined && syouhin4 !== "" ) {
+	                msg = msg + `\n商品名4：${syouhin4}　幅${haba4}cm × 長さ${naga4}cm × ${honn4}本`;
+		    }
+
+                    const syouhin5  = $('input[name="syouhin5"]').val();
+                    const haba5 = $('input[name="haba5"]').val();
+                    const naga5 = $('input[name="naga5"]').val();
+                    const honn5 = $('input[name="honn5"]').val();
+		    suuryo5 = haba5 * naga5 / 10000
+
+		    if ( syouhin5 !== null && syouhin5 !== undefined && syouhin5 !== "" ) {
+	                msg = msg + `\n商品名5：${syouhin5}　幅${haba5}cm × 長さ${naga5}cm × ${honn5}本`;
+		    }
+
+		    const bikou  = $('input[name="bikou"]').val();
+		    if ( bikou !== null && bikou !== undefined && bikou !== "" ) {
+	                msg = msg + `\n備考：${bikou}`;
+		    }
+                    const haitatu = $('input[name="haitatu"]').val();
+		    if ( haitatu !== null && haitatu !== undefined && haitatu !== "" ) {
+	                msg = msg + `\n備考：${haitatu}`;
+		    }
+		}
+		    
+                sendText(msg);
+		return false;
+            });
+        });
+
+    </script>
+
+</body>
+</html>
